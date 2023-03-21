@@ -1,0 +1,127 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 0 5px 10px;
+  background: linear-gradient(#e66465, #9198e5);
+  overflow-y: hidden;
+}
+
+.messages {
+  box-shadow: 0 0 10px 10px #2c1347;
+  border-radius: 7px;
+  width: 92%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.message-horizontal,
+.message-vertical {
+  display: flex;
+  width: 90%;
+  height: 20%;
+  align-items: center;
+  padding: 0 10px;
+  gap: 1rem;
+}
+
+.message-horizontal {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message-vertical {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.full-length-button,
+.short-button {
+  border-radius: 3px;
+  box-shadow: 0 0 5px 5px #8b1347;
+}
+
+.hovered {
+  cursor: pointer;
+  background-color: brown;
+}
+
+.full-length-input,
+.short-input {
+  padding-left: 5px;
+  border-radius: 6px;
+  border: solid 3px brown;
+  background-color: #2c1347;
+  color: #e66465;
+  box-shadow: 0 -5px 3px -3px #2c1347, 0 5px 3px -3px #2c1347;
+}
+
+.full-length-input {
+  width: 98%;
+  font-size: 20px;
+}
+
+.short-input {
+  flex-grow: 4;
+  font-size: 24px;
+}
+
+.full-length-button {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 5px brown;
+}
+
+.short-button {
+  flex-grow: 1;
+  font-size: 24px;
+  font-weight: bold;
+  border: solid 3px brown;
+}
+
+.smirnoff,
+.solomon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.1rem 1rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+p {
+  font-size: small;
+}
+
+.smirnoff {
+  align-items: start;
+  justify-content: center;
+  color: #2c1347;
+}
+
+.solomon {
+  align-items: end;
+  justify-content: center;
+  color: #225154;
+}
